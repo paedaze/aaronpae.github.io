@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Achievements & Certifications</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .achievement-icon { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .cert-icon { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .project-icon { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-4xl">🎮</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Game Developer Portfolio</h1>
+            <p class="text-xl text-blue-100 max-w-2xl mx-auto">Showcasing achievements in software development, game design, and virtual reality</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center space-x-8 py-4">
+                <button onclick="showSection('certifications')" class="nav-btn px-6 py-2 rounded-full font-medium transition-all duration-300 bg-blue-500 text-white">Certifications</button>
+                <button onclick="showSection('achievements')" class="nav-btn px-6 py-2 rounded-full font-medium transition-all duration-300 text-gray-600 hover:bg-gray-100">Achievements</button>
+                <button onclick="showSection('projects')" class="nav-btn px-6 py-2 rounded-full font-medium transition-all duration-300 text-gray-600 hover:bg-gray-100">Projects</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Certifications Section -->
+        <section id="certifications" class="section-content">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Professional Certifications</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Industry-recognized certifications demonstrating technical expertise</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="cert-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl text-white">💻</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">IT Specialist - Software Development</h3>
+                    <p class="text-gray-600 mb-4">Professional certification in software development practices and methodologies</p>
+                    <div class="flex items-center text-blue-600">
+                        <span class="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                        <span class="text-sm font-medium">Industry Certified</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="cert-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl text-white">🎮</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Unity Certified Associate: Game Developer</h3>
+                    <p class="text-gray-600 mb-4">Official Unity certification demonstrating game development proficiency</p>
+                    <div class="flex items-center text-blue-600">
+                        <span class="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                        <span class="text-sm font-medium">Unity Certified</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section-content hidden">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Awards & Achievements</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Recognition for excellence in technology competitions and academic performance</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="achievement-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-white text-lg">🏆</span>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Georgia Certificate of Merit</h3>
+                    <p class="text-gray-600 text-sm">State-level recognition for outstanding achievement</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="achievement-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-white text-lg">🥇</span>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">TSA VR Visualization - 1st Place</h3>
+                    <p class="text-gray-600 text-sm">Team Leader | High School State Leadership Conference</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="achievement-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-white text-lg">🥉</span>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">TSA VR Visualization - 3rd Place</h3>
+                    <p class="text-gray-600 text-sm">High School State Leadership Conference</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="achievement-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-white text-lg">🎮</span>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">TSA Video Game Design - Top 10</h3>
+                    <p class="text-gray-600 text-sm">Team Leader | High School State Leadership Conference</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="achievement-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-white text-lg">💻</span>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">TSA Coding - Top 10 Finalist</h3>
+                    <p class="text-gray-600 text-sm">High School State Leadership Conference</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="achievement-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-white text-lg">⭐</span>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Coach's Award - Coach Hall</h3>
+                    <p class="text-gray-600 text-sm">Recognition for exceptional dedication and performance</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="achievement-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-white text-lg">⭐</span>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Coach's Award - Coach Michael</h3>
+                    <p class="text-gray-600 text-sm">Recognition for outstanding contribution and effort</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="achievement-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-white text-lg">📚</span>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Certificate of Academic Achievement</h3>
+                    <p class="text-gray-600 text-sm">High School recognition for academic excellence</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="achievement-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-white text-lg">🥈</span>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Whitley Showcase - 2nd Place</h3>
+                    <p class="text-gray-600 text-sm">4x800 Meter Relay</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="achievement-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-white text-lg">🥉</span>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Whitley Showcase - 3rd Place</h3>
+                    <p class="text-gray-600 text-sm">3200 Meter Run</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="achievement-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-white text-lg">🏃</span>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Stampede in the Park - 2nd Place</h3>
+                    <p class="text-gray-600 text-sm">5000 Meter Race</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="achievement-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-white text-lg">🎓</span>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">AP Scholar with Distinction Award</h3>
+                    <p class="text-gray-600 text-sm">Advanced Placement academic excellence recognition</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-content hidden">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Game Design Projects</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Showcase of game development and virtual reality projects</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover min-h-[500px]">
+                    <div class="project-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl text-white">🥽</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">VR Visualization Projects</h3>
+                    <p class="text-gray-600 mb-6 text-lg">Award-winning virtual reality experiences and visualizations</p>
+                    
+                    <!-- Image Gallery Area -->
+                    <div class="bg-gray-50 rounded-xl p-6 mb-6 min-h-[200px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                        <div class="text-center">
+                            <div class="text-4xl mb-2">🖼️</div>
+                            <p class="text-gray-500">Project Images Gallery</p>
+                            <p class="text-sm text-gray-400">Add screenshots and demos here</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">VR</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">Unity</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-medium">3D</span>
+                    </div>
+                    <div class="text-green-600 font-medium">🏆 1st & 3rd Place TSA</div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover min-h-[500px]">
+                    <div class="project-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl text-white">🎮</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Video Game Design</h3>
+                    <p class="text-gray-600 mb-6 text-lg">Competitive game development projects showcasing creativity and technical skill</p>
+                    
+                    <!-- Image Gallery Area -->
+                    <div class="bg-gray-50 rounded-xl p-6 mb-6 min-h-[200px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                        <div class="text-center">
+                            <div class="text-4xl mb-2">🖼️</div>
+                            <p class="text-gray-500">Project Images Gallery</p>
+                            <p class="text-sm text-gray-400">Add gameplay screenshots here</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-medium">Game Design</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">Unity</span>
+                        <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-medium">C#</span>
+                    </div>
+                    <div class="text-orange-600 font-medium">🏆 Top 10 Finalist TSA</div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover min-h-[500px] lg:col-span-2">
+                    <div class="project-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl text-white">💻</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Software Development</h3>
+                    <p class="text-gray-600 mb-6 text-lg">Programming projects demonstrating software development expertise</p>
+                    
+                    <!-- Image Gallery Area -->
+                    <div class="bg-gray-50 rounded-xl p-6 mb-6 min-h-[200px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                        <div class="text-center">
+                            <div class="text-4xl mb-2">🖼️</div>
+                            <p class="text-gray-500">Project Images Gallery</p>
+                            <p class="text-sm text-gray-400">Add application screenshots and code samples here</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-xs font-medium">Programming</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">Software Dev</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-xs font-medium">Problem Solving</span>
+                    </div>
+                    <div class="text-blue-600 font-medium">🏆 Top 10 Finalist TSA</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-2xl">🚀</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Ready to Create Amazing Experiences</h3>
+            <p class="text-gray-400 mb-6">Passionate about game development, VR, and innovative software solutions</p>
+            <div class="flex justify-center space-x-6">
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-blue-400">2</div>
+                    <div class="text-sm text-gray-400">Professional Certifications</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-green-400">12</div>
+                    <div class="text-sm text-gray-400">Awards & Achievements</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-purple-400">3</div>
+                    <div class="text-sm text-gray-400">Project Categories</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showSection(sectionName) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section-content');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionName).classList.remove('hidden');
+            
+            // Update navigation buttons
+            const navButtons = document.querySelectorAll('.nav-btn');
+            navButtons.forEach(btn => {
+                btn.classList.remove('bg-blue-500', 'text-white');
+                btn.classList.add('text-gray-600', 'hover:bg-gray-100');
+            });
+            
+            // Highlight active button
+            event.target.classList.remove('text-gray-600', 'hover:bg-gray-100');
+            event.target.classList.add('bg-blue-500', 'text-white');
+        }
+
+        // Add smooth scrolling animation when switching sections
+        document.addEventListener('DOMContentLoaded', function() {
+            const navButtons = document.querySelectorAll('.nav-btn');
+            navButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: document.querySelector('nav').offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97f0793d15b4bd25',t:'MTc1Nzg1OTA4Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
